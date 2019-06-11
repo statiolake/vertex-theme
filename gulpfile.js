@@ -17,4 +17,4 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./'))
 });
 
-gulp.task('default', ['sass']);
+gulp.task('default', gulp.series('sass'));
